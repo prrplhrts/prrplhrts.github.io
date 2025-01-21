@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Transportation Office</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="Media/logo2.png" alt="Bagong Pilipinas Logo" class="mainlogo2">
+        <img src="Media/logo.png" alt="Land Transportation Office Logo" class="mainlogo">
+        <div class="text-content">
+          <h2 class="rph">Republic of the Philippines</h2>
+          <h2 class="dept">Department of Transportation</h2>
+          <h1 class="branch">Land Transportation Office</h1>
+        </div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+        <a href="/index.html">Home</a>
+        <a href="/gallery.html">Gallery</a>
+        <a href="/about-us.html">About Us</a>
+        <a href="/services.html">Services (Drivers License Renewal Form)</a>
+    </div>
+          
+    <div class="menu-button">
+        <button onclick="openSidebar()">☰ Menu</button>
+      </div>
+    </div>
+
+
+    <section class="form-container">
+        <h2>Driver's License Renewal Form</h2>
+        <form action="/submit-renewal" method="POST">
+
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="fullName" required>
+      
+            <label for="license-number">License Number:</label>
+            <input type="text" id="license-number" name="licenseNumber" required>
+      
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+          </fieldset>
+      
+
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="09123456789" required>
+          </fieldset>
+    
+          <fieldset>
+            <legend>Address</legend>
+            <label for="address">Street Address:</label>
+            <input type="text" id="address" name="address" required>
+      
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+      
+            <label for="region">Region:</label>
+            <select id="region" name="region" required>
+              <option value="">Select Region</option>
+              <option value="NCR">NCR</option>
+              <option value="Region I">Region I</option>
+              <option value="Region II">Region II</option>
+              <option value="Region III">Region III</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Declaration</legend>
+            <label for="medical-cert">Attach Medical Certificate:</label>
+            <input type="file" id="medical-cert" name="medicalCert" accept=".pdf,.jpg,.png" required>
+      
+            <label>
+              <input type="checkbox" name="declaration" required>
+              I confirm that the above information is correct and accurate to the best of my knowledge.
+            </label>
+          </fieldset>
+      
+          <button type="submit">Submit Renewal Request</button>
+        </form>
+      </section>
+      
+    <!--<form>
+        <fieldset class="legacy-form-row">
+            <legend>Type of Talk</legend>
+            <input  id = 'talk-type1'
+                    name='talk-type'
+                    type="radio"
+                    value="main-stage"/>
+            <label for="talk-type1" class="radio-label">Main Stage</label>
+            <input  id="talk-type2"
+                    name="talk-type"
+                    type="radio"
+                    value="workshop"
+                    checked />
+            <label for="talk-type2" class="radio-label">Workshop</label>
+        </fieldset>
+    </form>-->
+
+
+
+    <hr>
+    <img src="Media/footer.png" alt="footer" class="footer">
+    <script src="script.js"></script>
+    
+</body>
+</html>
