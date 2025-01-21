@@ -1,0 +1,430 @@
+.mainlogo {
+    /*header logo*/
+    width: 7%;
+    height: auto;
+    padding-right:10px
+  }
+
+.mainlogo2 {
+ /*header logo*/
+  width: 10%;
+  height: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left:5%;
+    padding-top: 10px;
+    padding-bottom:20px;
+    border-bottom: 2px solid #ccc;
+ }
+
+.text-content{
+    display:flex;
+    flex-direction: column;
+}
+
+.rph{
+    /*Republic of the Philippines*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    margin: 0;
+}
+.dept{
+    /*Department of Transportation*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+.branch{
+    /*Land Transportation Office*/
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 33px;
+    margin: 0;
+}
+
+.sidebar {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    top: 0;
+    right: 0;
+    background-color: #333; 
+    overflow-x: hidden;
+    transition: 0.3s; 
+    padding-top: 10%; 
+    z-index: 1000;
+  }
+  
+ 
+  .sidebar a {
+    padding: 20px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block; 
+    transition: 0.3s;
+    padding-left:50px;
+    margin-bottom:0;
+    padding-right: 50px;
+  }
+  
+  .sidebar a:hover {
+    background-color: #575757;
+    border-color: #fff;
+  }
+  
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+
+  .menu-button {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    z-index: 1001;
+    padding-right: 120px;
+    padding-top: 10px;
+  }
+  
+  .menu-button button {
+    
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+
+  .menu-button button:hover {
+    background-color: #575757;
+  }
+  
+  .sidebar-checkbox:checked ~ .sidebar {
+    width: 40vw;
+  }
+  
+  .sidebar-checkbox:checked ~ .menu-button {
+    display: none; 
+  }
+  .menu-button button:hover {
+    background-color: #575757;
+  }
+
+  /*carousel image*/
+  body {
+    background-color: #f8fafc;
+  }
+  
+  .container {
+    padding: 2rem;
+  }
+  .container2 {
+    padding: 2rem;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    max-width: 50vw;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    display: flex;
+    aspect-ratio: 32/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 1rem;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  
+  .slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .slider-nav a {
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    background-color: gray;
+    opacity: 0.5 ;
+    transition: opacity ease 250ms;
+  }
+  
+  .slider-nav a:hover {
+    opacity: 1;
+  }
+  
+
+.newsheaderr{
+  font-size: 2rem;
+    font-weight: bold;
+    color: #001F87; 
+    font-family: Times;
+    white-space: nowrap;
+}
+.news-section {
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.news-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.newsheader {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #001F87; 
+  font-family: 'Times New Roman', Times, serif;
+  white-space: nowrap;
+}
+.news-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #001F87; 
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    background-color: #001F87; 
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.news-item {
+  text-align: left;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 1rem; 
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box; 
+  word-wrap: break-word; 
+}
+
+.news-item .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-date {
+    font-size: 0.875rem;
+    color: gray;
+    margin: 0.5rem 0;
+}
+.news-item .text-content p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0;
+  word-wrap: break-word; 
+}
+.news-item h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #333; 
+  margin: 0;
+  overflow: visible; 
+  white-space: normal; 
+  word-wrap: break-word;
+}
+.news-item img {
+  width: 100%;  
+  height: 100%; 
+  object-fit: contain; 
+  max-height:400px; 
+  margin-bottom: 1rem;
+}
+.footer{
+  padding-top:50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+hr{
+  color: darkblue;
+}
+.imggallery{
+  padding-top:50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.pagetitle{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: darkblue;
+  font-size: 50px ;
+}
+.longparagraph{
+  padding-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:20px;
+  line-height:3vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007BFF;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input[type="file"] {
+  border: none;
+  padding: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="file"],
+  select {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
